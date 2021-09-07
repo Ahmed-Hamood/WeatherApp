@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: #2d7d9a;
+  transition: 0.8s background-color;
+}
+#container {
+  background-color: #2980b9;
+  width: 400px;
+  height: 520px;
+  margin: 20px auto;
+  border: 1px solid rgb(80, 80, 80);
+  -webkit-box-shadow: 6px 7px 5px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 7px 5px -3px rgba(0,0,0,0.75);
+  box-shadow: 6px 7px 5px -3px rgba(0,0,0,0.75);
+}
+h1 {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+h1::after {
+  margin: 10px auto;
+  display: block;
+  content: "";
+  border-bottom: 1px solid#2D7D9A;
+  width: 100px;
+}
+h2{
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  color: #454a50;
+}
+.upper-info {
+  text-align: center;
+  margin: 40px auto;
+}
+.black {
+  color: #222e3a;
+}
+.white {
+  color: white;
+}
+img {
+  width: 50px;
+  height: auto;
+}
+.lower-info {
+  width: 350px;
+  background-color: #fbfbfb;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 8px;
+}
+.info {
+  padding: 12px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  color: #222e3a;
+  font-size: 0.9rem;
+}
+.info:last-child {
+  border: none;
+}
+
+button {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border: none;
+  background-color: rgb(0, 162, 255);
+}
+button:hover {
+  background-color: #1c94e4;
+}
+
+
+/* modal */
+
+.modal{
+  background-color: #ffffff;
+  width: 400px;
+  height: 305px;
+  margin: 0 auto;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 12px;
+  margin: -950px auto;
+  left: 599px ;
+  padding: 15px 18px;
+  display: none;
+
+} 
+
+label,
+input{
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+input{
+  padding: 8px;
+  border: 1px solid rgb(192, 191, 191);
+  border-radius: 4px;
+}
+#submit{
+  width: 100%; 
+}
+.modal{
+  
+  animation: drop 0.4s ease-in-out forwards;
+}
+@keyframes drop {
+
+    0%{opacity: 0;}
+  70%{transform: translateY(540px) }
+  100%{transform: translateY(500px); opacity: 1;}  
+
+  
+  /* 0%{opacity: 0;}
+  70%{top: 15%; }
+  100%{top: 10%; opacity: 1;} */
+}
+
+#close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: auto;
+}
+ 

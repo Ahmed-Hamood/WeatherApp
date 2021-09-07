@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Weather</h1>
+  <div id="container">
+
+    <div class="upper-info">
+      <h2 class="white" id="location">xxxx , xxx</h2>
+      <h2  class="black"  id="desc">xxx Cloudy</h2>
+      <h2 class="white"  id="temp">00.0 (00.0 C)</h2>
+      <img id="icon" src="./cloudy.png" alt="">
+    </div>
+   
+
+    <div class="lower-info">
+          <div class="info" id="Humidity" >Relative Humidity : 97% </div>
+          <div class="info" id="mintemp">Min Temp : 73 F (23 C)</div>
+          <div class="info" id="maxtempC">Feel Like : 84 F (29 C)</div>
+          <div class="info" id="windspeedKmph">Wind From the SSE at 6.0 MPH</div>
+    </div>
+
+   <button id="change"> Change Location</button>
+
+  </div>
+
+
+  <div class="modal">
+    <img id="close" src="./close.png" alt="">
+    <h2>Change Location</h2>
+   
+    <label for="country"> Country </label>
+    <input type="text" name="country" id="country">
+    <label for="city"> City </label>
+    <input type="text" name="city" id="city">
+
+    <button id="submit"> Submit </button>
+  </div>
+
+  <script src="./storage.js"></script>
+    <script src="./weather.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./app.js"></script>
+</body>  
+</html>
